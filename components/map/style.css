@@ -1,0 +1,36 @@
+
+  .cls-1 {
+    fill: none;
+    stroke: #ffffff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .cls-2 {
+    fill: #32857b;
+    stroke-width: 0px;
+  }
+
+  .cls-2:hover{
+    fill: aqua;
+    transition: 280ms;
+  }
+
+
+  .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    pointer-events: none; /* Prevents tooltip from blocking mouse events */
+    opacity: 0; /* Start with opacity 0 */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transition for opacity and visibility */
+    z-index: 1000; /* Ensures the tooltip is on top */
+    visibility: hidden; /* Initially hidden */
+}
+
+.tooltip.visible {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Make it visible */
+}
